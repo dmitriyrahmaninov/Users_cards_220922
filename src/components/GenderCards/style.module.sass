@@ -1,0 +1,25 @@
+.cardsContainer
+    min-height: 440px
+    background-color: #2C3E50
+    border-radius: 20px
+    padding: 30px 33px
+    font-size: 30px
+    color: black
+    position: relative
+    &>p
+        padding-bottom: 20px
+        color: white
+    &>.cards
+        margin: 0 auto
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(4, max-content)
+        gap: 30px 30px
+        justify-content: space-between
+    &>.close_btn
+        display: none
+        position: absolute
+        top: -1px
+        right: -1px
+    &:hover>.close_btn
+        display: block
